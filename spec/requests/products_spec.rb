@@ -15,13 +15,9 @@
 RSpec.describe "/products", type: :request do
   # Product. As you add validations to Product, be sure to
   # adjust the attributes here as well.
-  let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
-  }
+  let(:valid_attributes) { { name: 'Sneakers', price: 49.99, quantity: 4 } }
 
-  let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
-  }
+  let(:invalid_attributes) {{ name: '' }}
 
   describe "GET /index" do
     it "renders a successful response" do
